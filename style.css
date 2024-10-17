@@ -1,65 +1,72 @@
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .chat-container {
-    width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    overflow: hidden;
-  }
-  
-  .chat-box {
-    height: 400px;
-    padding: 10px;
-    overflow-y: auto;
-    background-color: #e6e6e6;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .message {
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .user-message {
-    align-self: flex-end;
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .bot-message {
-    align-self: flex-start;
-    background-color: #f1f1f1;
-    color: #333;
-  }
-  
-  .input-area {
-    display: flex;
-    border-top: 1px solid #ddd;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    border: none;
-    padding: 15px;
-    font-size: 16px;
-  }
-  
-  button {
-    border: none;
-    padding: 15px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Chat Container */
+.chat-container {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Chat Box - Where messages appear */
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual Message Styling */
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+input[type="text"] {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
